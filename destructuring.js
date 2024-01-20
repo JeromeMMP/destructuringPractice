@@ -91,13 +91,9 @@ arr[1] = temp;
 const arr = [1,2];
 [arr[0],arr[1]] = [arr[1],arr[0]]
 
-function raceResults(arr){
-  const [first, second, third, ...rest] = arr;
-  return {first, second, third, rest};
-}
+// function raceResults(arr){
+//   const [first, second, third, ...rest] = arr;
+//   return {first, second, third, rest};
+// }
 
-//raceResults(['Tom', 'Margaret', 'Allison', 'David', 'Pierre'])
-
-// {first: "Tom", second: "Margaret", third: "Allison", rest: ["David", "Pierre"]}
-
-// const raceResults = ([first, second, third, ...rest]) => ({first, second, third, rest})
+ const raceResults = ([first, second, third, ...rest]) => ({first, second, third, rest});
